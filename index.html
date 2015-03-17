@@ -1,21 +1,319 @@
-﻿<!doctype html>
-<html>
-  <head>
+﻿
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Mycuri by BarthelemyCledic</title>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>CV Barthélémy Cledic</title>
+    <meta name="description" content="CV Barthélémy Cledic">
+    <meta name="author" content="Untame.net">
 
-  </head>
-  <body>
-      <header>
-          Barth
-      </header>
-      <div>
-          TEST ONe
-      </div>
-  </body>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="js/jquery-1.6.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/init.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+        #home {
+            background: url(images/art-abstract-line-rope-black-wallpapers-hd-backgrounds-widescreen-wallpaper-creative-hd-widescreen-abstract-modern-music-design-black-white-wayang-line-rope-wallpapers-backgrounds.jpg) 100% 0 fixed;
+            height: auto;
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+            box-shadow: 0 0 50px rgba(0,0,0,0.8);
+            padding: 10px 0;
+        }
+
+        #IdentityPhoto {
+            width: 123px;
+            height: 123px;
+            margin-top: 100px;
+            margin-left: 30px;            
+            margin-bottom: 20px;
+            float: left;
+            background: url(images/Identity.png) no-repeat;
+        }
+
+        #MyName {
+            float: left;
+            margin-top: 110px;
+            margin-left: 10px;
+            font-size: 1.9em;
+            color: white;
+        }
+
+        .well {
+            padding: 0px;
+            border: 0px;
+            background: none;
+            color:#ffffff;
+        }
+
+        .Canvas {
+            float: right;
+            margin-top: 43px;
+            margin-right: 0px;
+        }
+
+        #MyHeader {
+            border-bottom:3px solid black;
+        }
+        .Exp {
+            font-size: 1.8em;
+            color: #d2d2d2;
+            font-style:italic;
+            margin-top: 10px;
+        }
+        h2 {
+            color: #027bec;
+        }
+        h3 {
+            color: #5aa2e5;
+        }
+        #myCanvas {
+            background: url(images/FondHeaderDroite.png) no-repeat;
+            
+            background-position: 70px  43px;
+        }
+        #about {
+            background: url(images/about.png) 50% 0 fixed;
+            height: auto;
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+            box-shadow: 0 0 50px rgba(0,0,0,0.8);
+            padding: 20px 0;
+            color: #fff;
+        }
+        .taff {
+            background-color: #000000;
+            filter: alpha(opacity=80);
+            opacity: 0.8;
+            padding: 20px;
+        }
+        #evop
+        {
+            margin-top: 30px;
+            color : white;
+        }
+        .title {
+            color: #027bec;
+            font-size : 1.9em;
+        }
+        .divtitle
+        {
+            
+        }
+        body {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;            
+        }
+        li {
+            line-height: 30px;
+        }
+        #bgExternis {
+            background: url(images/ExternisBg.png) no-repeat;
+            background-position:right top;
+            margin-right:-20px;            
+            float:left;
+        }
+        #bgTrigone{
+            background: url(images/TrigoneBg.png) no-repeat;
+            background-position: right top;
+            margin-right: -20px;
+            float: left;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+    <!-- Section #2 -->
+    <section id="home" data-speed="4" data-type="background">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span14" id="MyHeader">
+                    <div id="IdentityPhoto"></div>
+                    <div id="MyName">
+                        Barthélémy Cledic
+                        <br /><br/>
+                        <i style="color:gray;font-size:0.8em">
+                            Developpeur Web
+                        </i>
+                    </div>
+                    <canvas id="myCanvas" class="Canvas" width="300" height="200"></canvas>
+                    <script>
+                        var canvas = document.getElementById('myCanvas');
+                        var context = canvas.getContext('2d');
+                        var colorBackground = '#027bec';
+                        var rectWidth = 180;
+                        var rectHeight = 30;
+                        context.font = 'italic 12pt Calibri';
+                        // translate context to center of canvas
+                        context.translate(40, 180);
+                        // rotate 45 degrees clockwise
+                        context.rotate(Math.PI / -3);
+                        context.fillStyle = colorBackground;
+                        context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth + 35, rectHeight);
+                        context.fillStyle = 'White';
+                        context.fillText('Visual Studio', -13, 3);
+                        context.translate(40, 40);
+                        context.fillStyle = colorBackground;
+                        context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth + 17, rectHeight);
+                        context.fillStyle = 'White';
+                        context.fillText('PhotoShop', -30, 3);
+                        context.translate(40, 40);
+                        context.fillStyle = colorBackground;
+                        context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth - 62, rectHeight);
+                        context.fillStyle = 'White';
+                        context.fillText('Sql Man.', -45, 3);
+                        context.translate(40, 40);
+                        context.fillStyle = colorBackground;
+                        context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth - 47, rectHeight);
+                        context.fillStyle = 'White';
+                        context.fillText('Blend', -62, 3);
+                        context.translate(00, 40);
+                        context.fillStyle = colorBackground;
+                        context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth - 55, rectHeight);
+                        context.fillStyle = 'White';
+                        context.fillText('P. Office', -40, 3);
+                    </script>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span14 well">
+                    <p id="evop">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.
+                        Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.
+                        Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>    
+                </div>
+                
+            </div>
+            <div class="row-fluid">
+                <div class="span14 well Exp">
+                    Expériences
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span14 well taff">
+                    <div id="bgExternis" />
+                        <div class="divtitle"><span class="title"><a href="http://www.externis.com/fr/" target="_blank">Externis</a></span><b> Août 2008 - aujourd'hui</b></div>
+                        <i>3 dernières années</i>
+                        <h3>Silverlight / Design & Ergonomie</h3>
+                        <h4>Team leader</h4>
+                        <p style="margin-right:140px;">
+                            Je suis en charge de concevoir et de développer l’application ecos Eagle.
+                            Mise en place d'une architecture front/back Silverlight chargé de regrouper l’intégralité des plates-formes de nos clients existant. L’application doit mutualiser des règles de gestions complexes avec des contraintes de performance et ergonomie.
+                        </p>
+                        <ul>
+                            <li>
+                                Création complète de l’architecture Silverlight
+                            </li>
+                            <li>
+                                Contruction d’IHM ergonomique et intuitive
+                            </li>
+                            <li>
+                                Répartition des taches à l’équipe, vérification de la qualité
+                            </li>
+                        </ul>
+                        <br />
+                        <i>5 premières années</i>
+                        <h3>.Net Développeur / Sql / Flex</h3>
+                        <h4>Responsable technique</h4>
+                        <p>
+                            Je suis en charge de gérer les besoins liés à la production des différents sites et à l'évolution des plates-formes en prenant compte des règles de gestion complexe (stock, reporting, accès site mode déconnecté,…).
+                        </p>
+                        <ul>
+                            <li>
+                                Maintenance
+                            </li>
+                            <li>
+                                Chiffrage
+                            </li>
+                            <li>
+                                Développement des évolutions
+                            </li>
+                            <li>
+                                Coordination avec nos différents partenaires (logisticien, prestataire)
+                            </li>
+
+
+                        </ul>
+                    </div><!-- /.span4 -->
+                
+            </div>
+            <div class="row-fluid">
+                <div class="span14 well taff" >
+                    <div id="bgTrigone" />
+                    <div class="divtitle"><span class="title"><a href="http://www.trigone.fr/" target="_blank">Goupe Trigone Informatique</a></span><b> 2005 – Août 2008</b></div>                    
+                    <h3>.Net Développeur / Winform / Sql</h3>
+                    <h4>Responsable technique</h4>
+                    <p style="margin-right:140px;">
+                        Développement d’application client lourd destiné au monde à la finance. J'ai également participé à la refonte compléte du site Trigone, mise en place du cms Joomla, création du design.
+                    </p>
+                    <ul>
+                        <li>
+                            Création
+                        </li>
+                        <li>
+                            Maintenance
+                        </li>
+                        <li>
+                            Évolution
+                        </li>
+                    </ul>                   
+                </div><!-- /.span4 -->
+
+            </div>
+            <div class="row-fluid">
+                <div class="span14 well Exp">
+                    Écoles
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span14 well taff">                    
+                    <div class="divtitle"><span class="title">Imc</span><b> 2004 – 2006 alternance</b></div>
+                    <h3>Bts informatique de gestion-option developpement</h3>
+                    <h4>Paris 75009</h4>                    
+                </div><!-- /.span4 -->
+
+            </div>
+            <div class="row-fluid">
+                <div class="span14 well taff">
+                    <div class="divtitle"><span class="title">Paul Langevin</span><b> 2002 – 2004</b></div>
+                    <h3>Bac professionnel Électrotechnique</h3>
+                    <h4>Beauvais 60000</h4>
+                </div><!-- /.span4 -->
+            </div>
+            <div class="row-fluid">
+                <div class="span14 well taff">
+                    <div class="divtitle"><span class="title">Marrie curry</span><b> 2000 – 2002</b></div>
+                    <h3>Bep Électrotechnique</h3>
+                    <h4>Nogent s/ oise 60180</h4>
+                </div><!-- /.span4 -->
+            </div>
+        
+      
+           
+        </div>
+    </section>
+    <section id="about" data-speed="2" data-type="background">
+        <div class="container">
+            <div class="page-header">
+                <h1>Me contacter</h1>
+            </div>
+            <div class="row-fluid">
+                <div class="span6">
+                    <h2>
+                        <a href="mailto:barthelemy.cledic@gmail.com?subject=Offre d'emploi">barthelemy.cledic@gmail.com</a>
+                    </h2>                    
+                </div><!-- /.span4 -->               
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>
