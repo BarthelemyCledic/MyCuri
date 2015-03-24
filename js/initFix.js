@@ -7,8 +7,11 @@ $(document).ready(function () {
    $window = $(window);
  
    $('section[data-type="background"]').each(function(){
-     // declare the variable to affect the defined data-type
-     var $scroll = $(this);
+       // declare the variable to affect the defined data-type
+       var parallaxImage = {};
+       parallaxImage.element = $(this);
+       parallaxImage.height = parallaxImage.element.height();
+        var $scroll = $(this);
                      
       $(window).scroll(function() {
         // HTML5 proves useful for helping with creating JS functions!
