@@ -4,16 +4,7 @@ var parallaxImages = [];
 
 $(document).ready(function () {
    // cache the window object
-    $window = $(window);
-    
-    $("#IdentityPhoto").fadeIn("slow", function () {
-        $("#MyName").fadeIn("slow", function () {
-            // Animation complete
-        });
-        $("#myCanvas").fadeIn("slow", function () {
-
-        });
-    });
+   $window = $(window);
  
    $('section[data-type="background"]').each(function(){
      // declare the variable to affect the defined data-type
@@ -32,9 +23,6 @@ $(document).ready(function () {
       }); // end window scroll
    });  // end section function
 }); // close out script
-
-
-
 
 /* Create HTML5 element for IE */
 document.createElement("section");
